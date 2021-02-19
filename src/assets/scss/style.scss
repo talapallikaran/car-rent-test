@@ -1,0 +1,288 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+button,
+input,
+select,
+a,
+textarea {
+  outline: none !important;
+}
+
+// Flexbox grid
+.flex-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.flex-row {
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  .flex-column {
+    padding-left: 20px;
+    padding-right: 20px;
+    &.column-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    &.column-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  &.space-14 {
+    margin-left: -7px;
+    margin-right: -7px;
+    .flex-column {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded 500";
+  src: url("../fonts/MuseoSansRounded-500.eot");
+  src: url("../fonts/MuseoSansRounded-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansRounded-500.woff2") format("woff2"),
+    url("../fonts/MuseoSansRounded-500.woff") format("woff"),
+    url("../fonts/MuseoSansRounded-500.svg#MuseoSansRounded-500") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded 900";
+  src: url("../fonts/MuseoSansRounded-900.eot");
+  src: url("../fonts/MuseoSansRounded-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansRounded-900.woff2") format("woff2"),
+    url("../fonts/MuseoSansRounded-900.woff") format("woff"),
+    url("../fonts/MuseoSansRounded-900.svg#MuseoSansRounded-900") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded 700";
+  src: url("../fonts/MuseoSansRounded-700.eot");
+  src: url("../fonts/MuseoSansRounded-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansRounded-700.woff2") format("woff2"),
+    url("../fonts/MuseoSansRounded-700.woff") format("woff"),
+    url("../fonts/MuseoSansRounded-700.svg#MuseoSansRounded-700") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded 100";
+  src: url("../fonts/MuseoSansRounded-100.eot");
+  src: url("../fonts/MuseoSansRounded-100.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansRounded-100.woff2") format("woff2"),
+    url("../fonts/MuseoSansRounded-100.woff") format("woff"),
+    url("../fonts/MuseoSansRounded-100.svg#MuseoSansRounded-100") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded 1000";
+  src: url("../fonts/MuseoSansRounded-1000.eot");
+  src: url("../fonts/MuseoSansRounded-1000.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansRounded-1000.woff2") format("woff2"),
+    url("../fonts/MuseoSansRounded-1000.woff") format("woff"),
+    url("../fonts/MuseoSansRounded-1000.svg#MuseoSansRounded-1000")
+      format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded 300";
+  src: url("../fonts/MuseoSansRounded-300.eot");
+  src: url("../fonts/MuseoSansRounded-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/MuseoSansRounded-300.woff2") format("woff2"),
+    url("../fonts/MuseoSansRounded-300.woff") format("woff"),
+    url("../fonts/MuseoSansRounded-300.svg#MuseoSansRounded-300") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+p,
+body {
+  font-size: 16px;
+  font-family: "Museo Sans Rounded 500";
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Museo Sans Rounded 900";
+}
+h1 {
+  font-size: 32px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #026786;
+}

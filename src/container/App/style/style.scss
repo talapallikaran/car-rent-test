@@ -1,0 +1,60 @@
+.app-container {
+  max-width: 375px;
+  margin: 0 auto;
+  background: #c7c7c7;
+  position: relative;
+  overflow: hidden;
+  .app-sections {
+    background: #ffffff;
+    margin-top: -30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .insurance-section {
+      padding: 28px 0;
+      .insurance-list {
+        display: flex;
+        margin-left: -20px;
+        margin-right: -20px;
+        li {
+          padding-left: 20px;
+          padding-right: 20px;
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+      .ins-title {
+        font-size: 12px;
+        line-height: normal;
+        font-family: "Museo Sans Rounded 500";
+        color: #026786;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    .see-all-button {
+      padding-top: 30px;
+      button {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 7px 15px;
+        border-radius: 5px;
+        background: #026786;
+        border: 1px solid #026786;
+        width: 100%;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+          background: #ffffff;
+          border-color: #026786;
+          color: #026786;
+        }
+      }
+    }
+  }
+}
