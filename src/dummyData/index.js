@@ -21,9 +21,9 @@ export const featuredCarsData = [
         product: {
             providerName: "Chuan Do Tan’s",
             carBrandName: "Car brand name",
-            rentPrice: 75,
-            ratings: 4.89,
-            totalTrips: "123"
+            rentPrice: 25,
+            ratings: 3.89,
+            totalTrips: "110"
         },
     },
     {
@@ -34,9 +34,9 @@ export const featuredCarsData = [
         product: {
             providerName: "Chuan Do Tan’s",
             carBrandName: "Car brand name",
-            rentPrice: 75,
-            ratings: 4.89,
-            totalTrips: "123"
+            rentPrice: 50,
+            ratings: 4.3,
+            totalTrips: "69"
         },
     },
 ]
